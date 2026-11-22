@@ -1,46 +1,49 @@
 
-# BIC21203 Web Development - Lab 4b
+# BIC21203 Web Development - Lab 4a
 
-## Client-Side Scripting: JSON and jQuery
+## Client-Side Scripting: JavaScript
 
-**Student Name:** Fatin Nur Afiqah binti Yusmanwadi  
+**Student Name:** Fatin Nur Afiqah binti Yusmanwadi
+
 **Matric Number:** AI250239
 
 ## Introduction
 
-This laboratory exercise focuses on JSON data handling and jQuery DOM manipulation using JavaScript.
+This laboratory exercise focuses on client-side scripting using JavaScript. It provides practical experience in creating interactive web pages and handling user input.
 
-## Question 1: Create a JSON File
+## Question 1: Change Text
 
-Created a JSON file named `books.json` containing information about two books, including their titles, authors, publication years and genres.
+Created a webpage with a button that changes the original message when clicked using JavaScript and an event listener.
 
-## Question 2: Retrieve and Display JSON Data
+## Question 2: Number Validator
 
-Used JavaScript Fetch API to retrieve data from `books.json` and display the book information on an HTML webpage.
+Created a number validator that checks user input and determines whether the number is less than, equal to or greater than 10. It also handles invalid and empty input.
 
-## Question 3: jQuery DOM Manipulation
+## Question 3: Number Generator
 
-Used jQuery to modify text, add CSS classes and handle button click events.
+Used a JavaScript for loop to generate numbers from 1 to 5 and display them as a list on the webpage.
 
 ## Project Structure
 
 - Q1/
-  - books.json
+  - index.html
+  - script.js
 - Q2/
-  - books.html
+  - index.html
   - script.js
 - Q3/
-  - jquery-dom.html
+  - index.html
+  - script.js
+- screenshots/
 
 ## How to Run
 
 1. Open the project folder in Visual Studio Code.
 2. Install the Live Server extension.
-3. Right-click the HTML file.
-4. Select Open with Live Server.
+3. Open the required HTML file.
+4. Right-click and select Open with Live Server.
 5. View the output in a web browser.
 
 ## Conclusion
 
-This laboratory exercise helped me understand how to create and retrieve JSON data and manipulate HTML elements using jQuery.
-
+This laboratory exercise improved my understanding of JavaScript functions, event listeners, conditional statements and loops. It also helped me develop interactive web pages using client-side scripting.

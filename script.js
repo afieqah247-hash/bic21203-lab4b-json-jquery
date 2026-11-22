@@ -1,41 +1,22 @@
-alert("JavaScript is working!");
-async function loadBooks() {
-    const firstBook = document.getElementById("firstBook");
-    const secondBook = document.getElementById("secondBook");
-    const genres = document.getElementById("genres");
-    const error = document.getElementById("error");
 
-    try {
-        const response = await fetch("../Q1/books.json");
+const generateBtn = document.getElementById("generateBtn");
+const numberList = document.getElementById("numberList");
 
-        if (!response.ok) {
-            throw new Error("Unable to load books.json");
-        }
+function generateNumbers() {
 
-        const data = await response.json();
+    // Clear existing items
+    numberList.textContent = "";
 
-        if (!data.books || data.books.length < 2) {
-            throw new Error("Book data is incomplete");
-        }
+    // Generate numbers from 1 to 5
+    for (let i = 1; i <= 5; i++) {
 
-        firstBook.textContent = data.books[0].title;
-        secondBook.textContent = data.books[1].author;
+        const listItem = document.createElement("li");
 
-        genres.textContent = "";
+        listItem.textContent = "The number is " + i;
 
-        data.books.forEach(function(book) {
-            const paragraph = document.createElement("p");
-
-            paragraph.textContent =
-                book.title + " - " + book.genres.join(", ");
-
-            genres.appendChild(paragraph);
-        });
-
-    } catch (errorMessage) {
-        error.textContent =
-            "Error: " + errorMessage.message;
+        numberList.appendChild(listItem);
     }
 }
 
-loadBooks();
+// Add click event listener
+generateBtn.addEventListener("click", generateNumbers);
